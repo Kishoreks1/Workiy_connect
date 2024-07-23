@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>Leave Management System</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+         function hideURLbar(){ window.scrollTo(0,1); }
+      </script>
+      <!-- Bootstrap Core CSS -->
+       <!-- <link href="./login_style.css" rel='stylesheet' type='text/css' /> -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- Custom CSS -->
+      <!-- <link rel="stylesheet" href="../static/css/login_style.css"> -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link th:href="@{/css/login_style.css}" rel='stylesheet' type='text/css' />
+      <link rel="stylesheet" th:href="@{/css/morris.css}" type="text/css" />
+      <!-- Graph CSS -->
+      <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
+      <link rel="stylesheet" th:href="@{/css/jquery-ui.css}">
+      <!-- jQuery -->
+      <script th:src="@{/js/jquery-2.2.0.min.js}"></script>
+      <!-- //jQuery -->
+      <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet'
+         type='text/css' />
+      <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" th:href="@{/img/favicon.png}">
+   </head>
+   <body>
+         <div class="flex-container">
+            <div class="image-container container_slides">
+               <div class="slider-img slides">
+                  <div class="slide">
+                     <img src="./img/attendance.jpeg" alt="attendance" class="slide_img" />
+                     <div class="discription_container">
+                        <span class="material-symbols--edit-calendar-outline icon-3" style="color: #FFC922;"></span>
+                        <p style="color: #FFC922;">Attendance Management</p>
+                        <span class="discription">
+                           The User Attendance Management System automates attendance tracking, replacing manual methods with efficient digital processes. Users, including administrators and teachers, benefit from secure authentication, role-based access, and real-time monitoring. The system offers seamless integration with other platforms, ensuring data accuracy and provides insightful reports for quick decision-making
+                        </span>
+                     </div>
+                  </div>
+                  <div class="slide">
+                     <img src="./img/leavemanagement.jpeg" alt="leavemanagement" class="slide_img" />
+                     <div class="discription_container">
+                        <span class="material-symbols--edit-calendar-outline icon-3" style="color: #0BA6FF;"></span>
+                        <p style="color: #0BA6FF;">Performance Management</p>
+                        <span class="discription">
+                           The User Attendance Management System automates attendance tracking, replacing manual methods with efficient digital processes. Users, including administrators and teachers, benefit from secure authentication, role-based access, and real-time monitoring. The system offers seamless integration with other platforms, ensuring data accuracy and provides insightful reports for quick decision-making
+                        </span>
+                     </div>
+                  </div>
+                  <div class="slide">
+                     <img src="./img/performance.jpeg" alt="performance" class="slide_img" />
+                     <div class="discription_container">
+                        <span class="material-symbols--edit-calendar-outline icon-3" style="color: #4DBBC6;"></span>
+                        <p style="color:#4DBBC6;">Leave Management</p>
+                        <span class="discription">
+                           The User Attendance Management System automates attendance tracking, replacing manual methods with efficient digital processes. Users, including administrators and teachers, benefit from secure authentication, role-based access, and real-time monitoring. The system offers seamless integration with other platforms, ensuring data accuracy and provides insightful reports for quick decision-making
+                        </span>
+                     </div>
+                  </div>
+                  <div class="dots_container">
+                     <span class="dot active"></span>
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                  </div>
+               </div>
+            </div>
+               
+               <div class="main-wthree">
+                  <div class="container">
+                     <!-- Display success message -->
+                     <div th:if="${successMessage}" class="alert alert-success" role="alert">
+                        <span th:text="${successMessage}"></span>
+                     </div>
+                     <!-- Display error message -->
+                     <div th:if="${errorMessage}" class="alert alert-danger" role="alert">
+                        <span th:text="${errorMessage}"></span>
+                     </div>
+                     <div class="sin-w3-agile">
+                        <div class="form-position">
+                           <form th:action="@{/login}" method="post">
+                              <div class="forms">
+                                 <div class="logo">
+                                    <img class="logo_img" src="./img/workiyconnect.png" alt="Logo.img">
+                                 </div>
+                                 <div class="special-container">
+                                    <div class="container">
+                                       <span class="mdi--user-circle-outline icon-1"></span>
+                                       <input required="" type="text" id="email" name="email" class="input input-typography" placeholder="username">
+                                    </div>
+                                 </div>
+                                 <div class="password-agileits">
+                                    <div class="container">
+                                    <span class="gravity-ui--shield-keyhole icon-2"></span>
+                                    <input type="password" id="password" name="password" class="password input-typography" placeholder="Password" required="">
+                                    <div class="clearfix"></div>
+                                 </div>
+                                 </div>
+                                 <div class="rem-for-agile forget-typography">
+                                    <a th:href="@{/password-reset/request}">Forgot Password ?</a><br>
+                                 </div>
+                                 <div class="login-w3 btn-1">
+                                    <input type="submit" class="login" value="login">
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+         </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script th:src="@{/js/login_script.js}"></script>
+      <!-- <script src="../static/js/login_script.js"></script> -->
+   </body>
+</html>

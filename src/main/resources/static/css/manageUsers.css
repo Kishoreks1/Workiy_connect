@@ -1,0 +1,244 @@
+
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-color: #F7F8FA; */
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.flex-container{
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+/* ======== Header ========= */
+.head_logo{
+    width:9% ; 
+}
+
+/* ======== NavBar ========= */
+.profilepicture {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%;
+    border: 3px solid #000000;
+    padding: 5px;
+    background: white
+}
+
+.profilepicture img {
+    width: 64px; 
+    height: 64px; 
+    border-radius: 50%;
+}   
+
+.employee_details{
+    margin: auto;
+    margin-top: 40px;
+}
+
+.employee_details p{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    font-weight: bold;
+    font-size: x-small;
+    color: #6b7a99;
+}
+
+#head_name{
+    font-size: xx-small;
+    color: #c4ccda;
+}
+
+#leavemanagement_head{
+    font-weight: bolder;
+    font-size:medium;
+    margin-top: 30px;
+}
+
+/* .profilepicture img {
+    position: relative;
+    top: 10px;
+    display: flex;
+    margin: auto;    
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    animation: rotate-shadow 4s infinite linear;
+}
+
+@keyframes rotate-shadow {
+    0% {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    25% {
+        box-shadow: 10px 0px 10px rgb(0, 0, 0);
+    }
+    50% {
+        box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    }
+    75% {
+        box-shadow: -10px 0px 10px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+} */
+
+.navBar{
+    width: 200px;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    margin: auto;
+    padding-right: 25px;
+    margin-left: 0px;
+  
+}
+
+.navBar .card_main p{
+     font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 8px;
+    font-style: normal;
+    margin: auto;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#active{
+    /* background-color: aqua; */
+    color: #62c6ff;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 74%);
+}
+
+.card_main{
+    margin-top:20%;
+    column-count: 2; 
+    gap:5%;   
+    column-gap: 5%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+
+.card_body{
+    margin: auto;
+}
+
+.card_main .card{
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.432); */
+    width: 5rem;
+    height: 5rem;
+}
+
+.card_main .card:hover{
+    box-shadow: 10px 10px 40px rgb(56, 54, 54);
+    /* background-color: aqua; */
+}
+/* .card_main img:hover{
+    color: aqua;
+} */
+
+
+.card_main img{
+    margin:auto;
+    width: 40%;
+}
+
+/* ======== Main Container ======== */
+
+.main_container{
+    display: grid;
+    width: 85%;
+}
+
+.head_main_container{
+width: 100%;
+/* height: 20px; */
+background-color: #62c6ff;
+}
+
+.body_main_container{
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: #dde1e9;
+    margin-top: 25px;
+    filter: drop-shadow(2px 4px 6px black);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+
+.upper_body_main_container{
+    width: 100%;
+    height: 10vh;
+}
+
+.lower_body_main_container{
+    background-color: #39444f;
+    width: 100%;
+    height: 75vh;
+    border-radius: 10px;
+
+}
+
+
+.two-axis {
+    /* display: table-row-group; */
+    width: 100%;
+    color: #f1f1f1;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: small;
+}
+
+.two-axis thead{
+    display:table-header-group; 
+    height: 45px;
+    
+}
+#table-two-axis th, #table-two-axis td, #table-two-axis tr {
+    text-align: center;
+}
+
+.two-axis tbody{
+    background-color: #b0abab;
+    color: #000000;
+    height: 45px;
+}
+/* ======== Right Container ======== */
+
+
+.right_container{
+    width: 15%;
+}
+/* ======== Footer ======== */
+
+.Workiy_footer{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 25px;
+}
